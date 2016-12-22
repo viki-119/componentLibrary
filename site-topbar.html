@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" onclick='$("#newFeatureImg").slideUp("slow")'>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <title>Document</title>
+  <style type="text/css">
+    body{
+      margin: 0px;
+      min-width: 1226px;
+    }
+    .site-topbar{
+      position: relative;
+      height: 40px;
+      font-size: 12px;
+      color: #b0b0b0;
+      background: #333;
+      z-index: 30; /*这里的层级要大于#newFeatureImg的层级*/
+    }
+    .container{
+      width: 1226px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .topbar-nav{
+      float: left;
+      height: 40px;
+      line-height: 40px;
+      /*overflow: hidden;*/
+    }
+    .topbar-cart{
+      width: 120px;
+      margin-left: 15px;
+      padding-left: 30px;
+      float:right;
+      height: 40px;
+      line-height: 40px;
+      background-color: #FF6700;
+      color: white;
+      position: relative;
+    }
+    .topbar-info{
+      line-height: 40px;
+      float: right;
+      position: relative;
+    }
+    #newFeatureImg{
+      width:700px;
+      position: absolute;
+      left: 5%;
+      /*left: -24px;*/
+      top: 14px;
+      text-align: center;
+      display: none;
+      /*下面的层级要小于.site-topbar才好使用*/
+      z-index:28;
+    }
+    #quickResponseCode{
+      display: none;
+    }
+
+  </style>
+  <script type="text/javascript">
+    function featureOnline() {
+      window.event.cancelBubble=true;
+      // console.log($('#newFeatureImg')[0].style.display === '');
+      // console.log($('#newFeatureImg')[0].style.display);
+      if ($('#newFeatureImg')[0].style.display === '' || $('#newFeatureImg')[0].style.display === 'none') {
+        $('#newFeatureImg').slideDown('slow');
+      } else {
+        $("#newFeatureImg").slideUp("slow");
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="site-topbar">
+    <div class="container">
+      <!-- left -->
+      <div class="topbar-nav">
+        <span onclick="featureOnline()">新功能上线</span>
+        <span>|</span>
+        <span onmouseOver="window.event.cancelBubble=true;$('#quickResponseCode')[0].style.display='block'" onmouseOut="$('#quickResponseCode')[0].style.display='none'">二维码</span>
+        <img id='quickResponseCode' src="./scan.png" alt="282*351">
+      </div>
+      <!-- right -->
+      <div class="topbar-cart">
+        <span>购物车</span>
+      </div>
+      <div class="topbar-info">
+        <span>登录</span>
+        <span>|</span>
+        <span>注册</span>
+        <span>|</span>
+        <span>消息通知</span>
+      </div>
+    </div>
+  </div>
+  <!-- 点击新功能上线的展示 -->
+  <div class="newFeature">
+    <img id='newFeatureImg' src="./tsFill.jpg" alt="700*1280" style="">
+  </div>
+  <!-- 下面的图片不受上面的影响 -->
+  <div>
+    阿拉斯加地方;拉拉风姐姐快拉倒是
+  </div>
+
+</body>
+</html>
