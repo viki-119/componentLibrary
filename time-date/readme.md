@@ -19,7 +19,7 @@
 # 日期对象的格式转换
 UTC时间与毫秒数之间的转换:  
 
-UTC时间==>毫秒数:  用 UTC时间.getTime();
+UTC时间==>毫秒数:  用 UTC时间.getTime();  
 UTC时间: new Date();  
 毫秒数:  new Date().getTime();  
 
@@ -28,10 +28,10 @@ UTC时间: new Date();
 UTC时间: new Date(new Date().getTime());  
 
 # 日期大小的比较(UTC时间和毫秒数都是可以比较大小的)  
-var myDate=new Date();
-myDate.setFullYear(2008,7,9); // 为日期对象设置了一个特定的日期 (2008 年 8 月 9 日)
-var today = new Date();
-console.log(today>myDate);
+var myDate=new Date();  
+myDate.setFullYear(2008,7,9); // 为日期对象设置了一个特定的日期 (2008 年 8 月 9 日)  
+var today = new Date();  
+console.log(today>myDate);  
 
 # 最近4年(包含当年)setYear()    返回值是毫秒数
 * const now=new Date();  
