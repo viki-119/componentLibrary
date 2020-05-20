@@ -8,6 +8,9 @@ js实现滚动到网页顶部：
 - [] window.scrollTo()
     参考文档： https://m.runoob.com/jsref/met-win-scrollto.html
 
-
-
 ```
+
+```jsx
+ js toLocaleString()方法：
+ - [] 把数组转换为字符串;[1,2,3].toLocaleString() 输出 '1,2,3'
+ - [] 如果数字使用，则会把数字格式化为按照三位一逗号的形式，最大保留三位小数；
