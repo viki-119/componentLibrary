@@ -4,7 +4,7 @@
 ```jsx
 js实现滚动到网页顶部：
 - document.scrollingElement.scrollTop = 0;
--> 参考文档：develop.mozilla.org/should-CN/docs/Web/API/Document/scrollingElement
--> 参考文档： 
+-> 参考文档：https://developer.mozilla.org/zh-CN/docs/Web/API/Document/scrollingElement
+-> 参考文档：
 
 ```
