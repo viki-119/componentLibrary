@@ -3,8 +3,11 @@
 ## time-dates时间格式转换与日期详细描述  
 ```jsx
 js实现滚动到网页顶部：
-- document.scrollingElement.scrollTop = 0;
--> 参考文档：https://developer.mozilla.org/zh-CN/docs/Web/API/Document/scrollingElement
--> 参考文档：
+- []document.scrollingElement.scrollTop = 0;
+    参考文档：https://developer.mozilla.org/zh-CN/docs/Web/API/Document/scrollingElement
+- [] window.scrollTo()
+    参考文档： https://m.runoob.com/jsref/met-win-scrollto.html
+
+
 
 ```
