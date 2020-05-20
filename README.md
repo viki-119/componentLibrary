@@ -14,3 +14,5 @@ js实现滚动到网页顶部：
  js toLocaleString()方法：
  - [] 把数组转换为字符串;[1,2,3].toLocaleString() 输出 '1,2,3'
  - [] 如果数字使用，则会把数字格式化为按照三位一逗号的形式，最大保留三位小数；
+      参考链接：https://www.w3school.com.cn/jsref/jsref_toLocaleString_array.asp
+```
