@@ -20,3 +20,11 @@ js实现滚动到网页顶部：
 ```jsx
 xss攻击：跨站脚本攻击， cross site scripting
 ```
+
+```jsx
+  React中使用富文本；dangerousLySetInnerHTML
+
+  <div dangerousLySetInnerHTML={{__html: "<div>1233</div>"}}/>
+
+ - [] 参考文档：https://blog.csdn.net/exploringfly/article/details/80582859
+```
