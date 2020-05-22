@@ -28,3 +28,34 @@ xss攻击：跨站脚本攻击， cross site scripting
 
  - [] 参考文档：https://blog.csdn.net/exploringfly/article/details/80582859
 ```
+
+```jsx
+   let num = 123.205;
+   num.toFixed(2) => "123.20";
+   
+   num = 123.235;
+   num.toFixed(2) => "123.23";
+
+   num = 123.225;
+   num.toFixed(2) => "123.22";
+
+   num = 123.005;
+   num.toFixed(2) => "123.00";
+```
+
+```jsx
+   let num;
+   isNaN(num) => true  (Number(num) => NaN)
+   
+   num = "123abc";
+   isNaN(num) => true  (Number(num) => NaN)
+
+   num = "";
+   isNaN(num) => false  (Number(num) => 0)
+
+   num = "null";
+   isNaN(num) => false  (Number(num) => 0)
+ 
+   num = "123";
+   isNaN(num) => false  (Number(num) => 123)
+```
