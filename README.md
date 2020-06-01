@@ -59,3 +59,13 @@ xss攻击：跨站脚本攻击， cross site scripting
    num = "123";
    isNaN(num) => false  (Number(num) => 123)
 ```
+
+```jsx
+ 注意js中 / 操作符如果两侧的数字是整数，也会当作浮点数运算，不会整除，会保留小数
+ const num = 5 / 2 // 2.5;
+正确取整需要借助于parseInt();
+
+向上取整一般用于分页计算
+const totalPage=Math.ceil(totalRecord / pageSize)
+
+```
